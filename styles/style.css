@@ -190,6 +190,97 @@ ul *{
 
 
 
+/* facts styles */
+#fact-part{
+    margin-top: 100px;
+}
+.fact-content h2{
+    margin-bottom: 20px;
+}
+.fact-content p{
+    margin-bottom: 90px;
+}
+.fact-box{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 100px;
+}
+.fact-box .fact-list{
+    border: 1px solid rgb(255, 144, 14);
+    border-radius: 8px;
+    padding: 30px 20px;
+    text-align: center;
+}
+.fact-box .fact-list *{
+    margin-bottom: 5px;
+}
+.fact-box .fact-list .fact-number{
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: rgb(66, 66, 66);
+}
+.fact-box .fact-list .facts-title{
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: rgb(114, 114, 114);
+}
+/* facts styles end */
+
+
+
+
+
+/* sponsors styles */
+#sponsors{
+    margin-top: 100px;
+}
+.sponsors-content{
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+.sponsors-content #sponsors-title{
+    margin-bottom: 20px;
+}
+.sponsors-content p{
+    margin-bottom: 50px;
+}
+.sponsors-img img{
+    width: 100%;
+    opacity: 0.5;
+    transition: 1s;
+}
+.sponsors-img img:hover{
+    opacity: 1;
+    transition: 1s;
+}
+.sponsors-img{
+    display: grid;
+    grid-template-columns: repeat(5 , 1fr);
+    gap: 80px;
+} 
+/* sponsors styles end */
+
+
+
+
+
+/* footer styles */
+footer{
+    margin: 100px 0;
+}
+.rights{
+    background-color: rgb(255, 244, 231);
+    border-radius: 10px;
+    text-align: center;
+    padding: 40px;
+}
+
+
+
+
+
+
 
 /* media query */
 /* small devices */
@@ -226,8 +317,20 @@ ul *{
         top: 0;
         left: 0;
     }
+
+    /* facts styles */
+    .fact-box{
+        grid-template-columns: repeat(1 , 1fr);
+    }
+
+    /* sponsors styles */
+    .sponsors-img{
+        grid-template-columns: repeat(1 , 1fr);
+    }
     
 }
+
+
 
 /* medium devices */
 @media screen and (min-width: 577px) and (max-width: 992px) {
@@ -253,6 +356,16 @@ ul *{
     /* features styles */
     .features-box{
         grid-template-columns: repeat(1 , 1fr);
+    }
+
+    /* facts styles */
+    .fact-box{
+        grid-template-columns: repeat(2 , 1fr);
+    }
+
+    /* sponsors styles */
+    .sponsors-img{
+        grid-template-columns: repeat(2 , 1fr);
     }
     
 }
